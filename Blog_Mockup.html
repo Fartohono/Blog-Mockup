@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DevBlog — [Твоє Ім'я] | Frontend Developer</title>
+  <title>DevBlog — Артемій Павлін | Frontend Developer</title>
   <meta name="description" content="Блог про HTML, CSS і JavaScript. Ділюсь реальним досвідом навчання у веб-розробці.">
 
   <!-- Google Fonts: Inter + JetBrains Mono -->
@@ -158,10 +158,10 @@
         <div class="post-card__body">
           <span class="post-tag post-tag--js">Js</span>
           <h3 class="post-card__title">
-            Event loop на кухні
+            Event Loop на кухні: рецепти асинхронного JavaScript
           </h3>
           <p class="post-card__excerpt">
-
+Просте та наочне пояснення роботи Event Loop через кулінарні аналогії. Розбираємо, як JavaScript керує завданнями, обробляє асинхронні операції та забезпечує плавну роботу застосунків.
           </p>
           <div class="post-card__meta">
             <time>16 берез. 2025</time>
@@ -177,10 +177,10 @@
         <div class="post-card__body">
           <span class="post-tag post-tag--perf">Perf</span>
           <h3 class="post-card__title">
-            Lighthouse з 43 до 96
+            Оптимізація продуктивності сайту: підвищення оцінки Lighthouse з 43 до 96 балів.
           </h3>
           <p class="post-card__excerpt">
-
+Історія оптимізації вебсайту, завдяки якій вдалося значно підвищити його продуктивність. Розглядаємо способи прискорення завантаження, оптимізації ресурсів і покращення користувацького досвіду.
           </p>
           <div class="post-card__meta">
             <time>18 берез. 2025</time>
@@ -193,11 +193,137 @@
     </div>
   </div>
 </section>
-    <section class="skills" id="skills"></section>
-    <section class="contact" id="contact"></section>
+    <section class="skills" id="skills">
+  <div class="container">
+
+    <h2 class="section-title">Мій <span>стек</span></h2>
+
+    
+<div class="skills__grid">
+
+  <div class="skill-item">
+    <h3 class="skills__group-title">
+      Рівень володіння технологією
+    </h3>
+
+    <div class="skill-item__header">
+      <span id="skillName">HTML5</span>
+      <span class="skill-item__pct" id="skillPercent">
+        90%
+      </span>
+    </div>
+
+    <div class="skill-bar">
+      <div
+        id="skillProgress"
+        class="skill-bar__fill skill-bar__fill--blue"
+        style="width: 90%"
+      ></div>
+    </div>
+  </div>
+
+</div>
+    <!-- Tech-теги -->
+    <div class="skills__tags">
+      <span class="tech-tag">HTML5</span>
+      <span class="tech-tag">CSS3</span>
+      <span class="tech-tag">SCSS</span>
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">Bootstrap 5</span>
+      <span class="tech-tag">Tailwind CSS</span>
+      <span class="tech-tag">Git</span>
+      <span class="tech-tag">GitHub Pages</span>
+      <span class="tech-tag">Figma</span>
+    </div>
+
+  </div>
+</section>
+    <section class="contact" id="contact">
+  <div class="container">
+
+    <h2 class="section-title" style="margin-bottom:36px">Написати <span>мені</span></h2>
+
+    <div class="contact__grid">
+
+      <!-- Ліворуч: інформація -->
+      <div class="contact__info">
+        <h3>Відкритий до співпраці</h3>
+        <p>Шукаю стажування або першу роботу у веб-розробці.
+          Також відповідаю на питання про навчання і перший досвід у професії.</p>
+
+        <div class="contact__links">
+          <a href="https://github.com/Fartohono" class="contact__link" target="_blank" rel="noopener">
+            <span class="contact__link-icon" style="background:#24292e">🐙</span>
+            Fartohono
+          </a>
+          <a href="https://t.me/Fartohono" class="contact__link" target="_blank" rel="noopener">
+            <span class="contact__link-icon" style="background:#229ed9">✈️</span>
+            Fartohono
+          </a>
+          <a href="mailto:fartohonodrexler@gmail.com" class="contact__link">
+            <span class="contact__link-icon" style="background:#1a1a2e">📧</span>
+            fartohonodrexler@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <!-- Праворуч: форма -->
+      <div class="contact__form-wrap">
+        <form class="contact__form" id="contactForm">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fname">Ім'я</label>
+              <input class="form-input" id="fname" type="text" placeholder="Твоє ім'я" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="femail">Email</label>
+              <input class="form-input" id="femail" type="email" placeholder="email@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="fsubject">Тема</label>
+            <input class="form-input" id="fsubject" type="text" placeholder="Про що хочеш написати?">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="fmessage">Повідомлення</label>
+            <textarea class="form-textarea" id="fmessage" placeholder="Напиши тут..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--submit">
+            Надіслати повідомлення →
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   </main>
 
-  <footer class="footer"></footer>
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <a href="#home" class="nav__logo">
+      <div class="nav__logo-icon" aria-hidden="true"></></div>
+      <span class="nav__logo-text">Dev<span>Blog</span></span>
+    </a>
+
+    <p class="footer__copy">© 2025 Артемій Павлін · Зроблено з ❤️ і VS Code</p>
+
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="#home">Головна</a>
+      <a href="#posts">Статті</a>
+      <a href="https://github.com/YOUR" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+
+  </div>
+</footer>
+
 
   <script src="script.js" defer></script>
 </body>
